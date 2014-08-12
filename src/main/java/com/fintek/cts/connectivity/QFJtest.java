@@ -3,6 +3,7 @@ package com.fintek.cts.connectivity;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 
+
 import quickfix.ConfigError;
 import quickfix.DefaultMessageFactory;
 import quickfix.FileLogFactory;
@@ -39,7 +40,7 @@ public class QFJtest implements LogonListener {
 		test.start();
 	}
 	
-	private void start() throws FileNotFoundException, ConfigError {
+	public void start() throws FileNotFoundException, ConfigError {
 		org.apache.log4j.BasicConfigurator.configure();
 		
 		app = new QFJApplication();
